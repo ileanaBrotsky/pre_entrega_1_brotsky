@@ -7,7 +7,7 @@ return  (
     <>
     <Grid container>
         <Grid className="footer" item xs={12}>
-            este es el footer
+        &copy; {new Date().getFullYear()} - IBweb
         </Grid>
     </Grid>
     </>

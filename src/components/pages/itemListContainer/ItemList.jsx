@@ -4,7 +4,7 @@ import ProductCard from "../../common/productCard/ProductCard.jsx";
 
 export default function ItemList({ greeting }) {
   return (
-    <Grid container sx={{ backgroundColor:"#b2ad9f"}}>
+    <Grid container sx={{ backgroundColor:"#D9D5CB",paddingBottom:"80px"}}>
       <Grid item xs={12}sx={{ paddingLeft:"20px" }}> <h3>{greeting}</h3></Grid>
       
       <Grid item xs={12} sx={{ display:"flex",justifyContent:"center", flexWrap:"wrap" , gap:"20px"}}>
@@ -19,7 +19,6 @@ export default function ItemList({ greeting }) {
           />
        
         ))}
-
 </Grid>
     </Grid>
     //  <Grid item sx={{ padding:{xs:"20px",sm:"60px"}}} xs={12}><h3>{greeting}</h3></Grid>

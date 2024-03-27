@@ -7,14 +7,14 @@ import {
 } from "@mui/material";
 import Menu from '@mui/material/Menu';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
-import { ShoppingCart, Sell, AccountCircle, Contactless, Home, LocalOffer } from "@mui/icons-material";
+import { ShoppingCart, Category, AccountCircle, Home, LocalOffer } from "@mui/icons-material";
 
 const Navbar = () => {
   return (
     <>
        <PopupState variant="popover" popupId="demo-popup-menu">
       {(popupState) => (   
-      <MenuList style={{ display: "flex", gap: 2 }}>
+      <MenuList style={{ display: "flex", gap: 2 }} sx={{position:"sticky"}}>
          <MenuItem>
          <img alt="logo PetPal" src="public/petpal-logo.png" style={{width:"100px"}}/>
         </MenuItem>
@@ -37,7 +37,7 @@ const Navbar = () => {
         <MenuItem  {...bindTrigger(popupState)}>
           {" "}
           <ListItemIcon>
-            <Contactless fontSize="small" sx={{paddingRight:"5px"}} />
+            <Category fontSize="small" sx={{paddingRight:"5px"}} />
             <ListItemText >Categorias</ListItemText>
           </ListItemIcon>
         </MenuItem>
