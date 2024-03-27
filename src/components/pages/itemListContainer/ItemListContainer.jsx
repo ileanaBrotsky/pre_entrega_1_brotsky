@@ -1,14 +1,11 @@
-import ProductCard from "../../common/productCard/ProductCard"
+import ItemList from "./ItemList";
 
-const ItemListContainer = () => {
+const ItemListContainer = ({ greeting }) => {
   return (
-    <div>
-        <h1>Bienvenidos a nuestra tienda</h1>
-        <ProductCard price={100} title={"Titulo 1"} description={"descripcion 1"}/>
-        <ProductCard price={200} title={"Titulo 2"} description={"descripcion 2"}/>
-        <ProductCard price={300} title={"Titulo 3"} description={"descripcion 3"}/>
-        </div>
-  )
-}
+    <>
+<ItemList greeting={greeting}/>
+    </>
+  );
+};
 
-export default ItemListContainer
+export default ItemListContainer;

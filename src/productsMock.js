@@ -1,0 +1,110 @@
+ export const products = [
+    {
+        id: 1,
+        title: 'Breakfast',
+        price: 123,
+        stock: 10,
+        description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes caninos",
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542526/images_eqjkcq.jpg'
+    },
+    {
+        id: 2,
+        title: 'Burger',
+        price: 123,
+        stock: 10,
+        description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes caninos",
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542488/images_jybt1g.jpg'
+    },
+    {
+        id: 3,
+        title: 'Camera',
+        price: 123,
+        stock: 10,
+        description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes caninos",
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542509/images_q7w3wg.jpg'
+    },
+    {
+        id: 4,
+        title: 'Coffee',
+        price: 123,
+        stock: 10,
+         description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes caninos",
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542470/images_hqvwyu.jpg'
+    },
+    {
+        id: 5,
+        title: 'Hats',
+        price: 123,
+        stock: 10,
+         description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes caninos",
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542447/images_ndlung.jpg'
+    },
+    {
+        id: 6,
+        title: 'Honey',
+        price: 123,
+        stock: 10,
+         description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes caninos",
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542422/images_ig5r5l.jpg'
+    },
+    {
+        id: 7,
+        title: 'Basketball',
+        price: 123,
+        stock: 10,
+         description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes caninos",
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542405/images_wpigc6.jpg',
+    },
+    {
+        id: 8,
+        title: 'Fern',
+        price: 123,
+        stock: 10,
+         description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes caninos",
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542382/images_gu8ebe.jpg',
+    },
+    {
+        id: 9,
+        title: 'Mushrooms',
+        price: 123,
+        stock: 10,
+         description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes felinos",
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711548345/71oB5XjInEL._AC_UF1000_1000_QL80__hs5vrg.jpg',
+    },
+    {
+        id: 10,
+        price: 123,
+        stock: 10,
+         description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes felinos", title: 'Tomato basil',
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711548344/61jYFC7hrFL._AC_UF1000_1000_QL80__qwr6aa.jpg',
+    },
+    {
+        id: 11,
+        title: 'Sea star',
+        price: 123,
+        stock: 10,
+         description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes felinos",
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711548344/51K8USMQvvL._AC__aiivli.jpg',
+    },
+    {
+        id: 12,
+        title: 'Bike',
+        price: 123,
+        stock: 10,
+         description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
+        category: "juguetes felinos",
+        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711548251/hcfgy8vdx3ks2r2lhbbb.jpg',
+
+    },
+];
