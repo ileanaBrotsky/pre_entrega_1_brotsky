@@ -1,16 +1,15 @@
+import { Grid } from "@mui/material";
+import "./footer.css";
 
-import { Grid } from "@mui/material"
-import "./footer.css"
-
-const Footer=()=>{
-return  (
+const Footer = () => {
+  return (
     <>
-    <Grid container>
+      <Grid container>
         <Grid className="footer" item xs={12}>
-        &copy; {new Date().getFullYear()} - IBweb
+          &copy; {new Date().getFullYear()} - IBweb
         </Grid>
-    </Grid>
+      </Grid>
     </>
-)
-}
- export default Footer
+  );
+};
+export default Footer;
