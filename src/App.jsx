@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <Layout>
-        <ItemListContainer greeting={"Bienvenidos"} />
+        <ItemListContainer/>
       </Layout>
     </>
   );

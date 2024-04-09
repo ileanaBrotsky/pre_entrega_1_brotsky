@@ -1,5 +1,4 @@
 import {
-  Badge,
   ListItemIcon,
   ListItemText,
   MenuItem,
@@ -8,12 +7,12 @@ import {
 import Menu from "@mui/material/Menu";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 import {
-  ShoppingCart,
   Category,
   AccountCircle,
   Home,
   LocalOffer,
 } from "@mui/icons-material";
+import CartWidget from "../../common/cartWidget/CartWidget";
 
 const Navbar = () => {
   return (
@@ -66,9 +65,7 @@ const Navbar = () => {
             </MenuItem>
             <MenuItem>
               {" "}
-              <Badge badgeContent={4} color="primary">
-                <ShoppingCart color="action" />
-              </Badge>
+             <CartWidget/>
             </MenuItem>
           </MenuList>
         )}
