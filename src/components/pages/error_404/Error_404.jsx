@@ -1,10 +1,15 @@
-import "./error_404.css"
+import "./error_404.css";
 
 const Error_404 = () => {
   return (
-    <div>
-      <img className="error404img" src="public/error404.png" alt="img de error 404" /></div>
-  )
-}
+    
+      <img
+        className="error404img"
+        src="public/error404.png"
+        alt="img de error 404"
+      />
+  
+  );
+};
 
-export default Error_404
+export default Error_404;
