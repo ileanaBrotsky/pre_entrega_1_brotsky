@@ -6,14 +6,9 @@ import {
 } from "@mui/material";
 import Menu from "@mui/material/Menu";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
-import {
-  Category,
-  AccountCircle,
-  Home,
-  LocalOffer,
-} from "@mui/icons-material";
+import { Category, AccountCircle, LocalOffer,} from "@mui/icons-material";
 import CartWidget from "../../common/cartWidget/CartWidget";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
@@ -24,20 +19,22 @@ const Navbar = () => {
             sx={{ position: "sticky" }}
           >
             <MenuItem>
+            <Link to={"/"}>
               <img
                 alt="logo PetPal"
-                src="public/petpal-logo.png"
+                src="/petpal-logo.png"
                 style={{ width: "100px" }}
               />
+               </Link>
             </MenuItem>
             <MenuItem></MenuItem>
 
-            <MenuItem>
+            {/* <MenuItem>
               <ListItemIcon>
                 <Home fontSize="small" sx={{ paddingRight: "5px" }} />
                 <ListItemText>Productos</ListItemText>
               </ListItemIcon>
-            </MenuItem>
+            </MenuItem> */}
             <MenuItem>
               {" "}
               <ListItemIcon>
@@ -53,8 +50,8 @@ const Navbar = () => {
               </ListItemIcon>
             </MenuItem>
             <Menu {...bindMenu(popupState)}>
-              <MenuItem onClick={popupState.close}>Perritos</MenuItem>
-              <MenuItem onClick={popupState.close}>Gatitos</MenuItem>
+             <Link to={"/category/juguetes-caninos"}><MenuItem onClick={popupState.close}>Perritos</MenuItem></Link>
+             <Link to={"/category/juguetes-felinos"}><MenuItem onClick={popupState.close}>Gatitos</MenuItem></Link>
             </Menu>
             <MenuItem>
               {" "}
