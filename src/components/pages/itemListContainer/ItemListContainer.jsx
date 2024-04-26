@@ -6,14 +6,14 @@ import { useParams } from "react-router-dom";
 const ItemListContainer = () => {
   
   const {category}= useParams()
-console.log("la category es", category)
+
 
   const [items, setItems]= useState([]);
   const [error, setError]= useState(null);
   
   useEffect(()=>{
     let productsFiltered= products.filter(product=> product.category===category)
-    console.log("los prod",productsFiltered)
+  
     const getProducts= new Promise((resolve, reject)=>{
       let x=true
       if(x) resolve(category?productsFiltered:products)
