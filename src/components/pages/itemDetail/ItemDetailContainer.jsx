@@ -17,8 +17,11 @@ const ItemDetailContainer = () => {
     
     }, [id])
    
+     const onAdd= (quantity)=>{
+console.log(quantity)
+     }
   return (
-    <ItemDetail item={item} isOneProduct={true}/>
+    <ItemDetail item={item} isOneProduct={true} onAdd={onAdd}/>
   )
 }
 

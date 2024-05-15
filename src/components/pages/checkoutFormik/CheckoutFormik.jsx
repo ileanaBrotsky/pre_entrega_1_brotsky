@@ -1,4 +1,4 @@
-import TextField from '@mui/material/TextField';
+import { Button, TextField } from '@mui/material';
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
@@ -57,7 +57,7 @@ const ChekoutFormik = () => {
           error={errors.confirmarpassword ? true : false}
           helperText={errors.confirmarpassword }
         />
-     
+          <Button type='submit'>Enviar</Button>
       </form>
     </div>
   );

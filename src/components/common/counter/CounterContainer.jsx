@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import CounterPresentacional from "./CounterPresentacional";
+import CounterPresentational from "./CounterPresentational";
 
 export const CounterContainer = ( {stock, initial=1, onAdd } ) => {
   
@@ -33,6 +33,6 @@ export const CounterContainer = ( {stock, initial=1, onAdd } ) => {
   };
 
   return (
-    <CounterPresentacional {...objectProps} />
+    <CounterPresentational {...objectProps} />
   );
 };

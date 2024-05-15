@@ -1,8 +1,9 @@
+import { CounterContainer } from "../../common/counter/CounterContainer.jsx";
 import ProductCard from "../../common/productCard/ProductCard.jsx";
 import { Grid } from "@mui/material";
-const ItemDetail = ({item,isOneProduct}) => {
+const ItemDetail = ({item,isOneProduct, onAdd}) => {
   return (
-    <Grid container sx={{ backgroundColor: "#D9D5CB", padding: "80px",  minHeight:"90vh"}}>
+    <Grid container sx={{padding: "80px",  minHeight:"100vh"}}>
     <Grid item xs={12} sx={{display: "flex", justifyContent: "center",flexWrap: "wrap", gap: "20px" }}>
     <ProductCard
       price={item.price}
@@ -12,7 +13,9 @@ const ItemDetail = ({item,isOneProduct}) => {
       id={item.id}
       isOneProduct={isOneProduct}
      />
+      <CounterContainer stock={item.stock} onAdd={onAdd}/>
     </Grid>
+   
   </Grid>
 
   )
