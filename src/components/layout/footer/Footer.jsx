@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import "./footer.css";
+import "./footer_styles.css";
 
 const Footer = () => {
   return (
