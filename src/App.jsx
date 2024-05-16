@@ -5,11 +5,11 @@ import ItemListContainer from "./components/pages/itemListContainer/ItemListCont
 import CartContainer from "./components/pages/cart/CartContainer"
 import CheckoutFormik from "./components/pages/checkoutFormik/CheckoutFormik";
 import Error_404 from "./components/pages/error_404/Error_404";
-import CartContexProviader from "./context/CartContex";
+import CartContextProvider from "./context/CartContex";
 function App() {
   return (
     <BrowserRouter>
-    <CartContexProviader>
+    <CartContextProvider>
       <Routes>
         <Route element={<Layout />}>
         <Route path="/" element={<ItemListContainer />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
         </Route>
       </Routes>
-      </CartContexProviader>
+      </CartContextProvider>
     </BrowserRouter>
   );
 }
