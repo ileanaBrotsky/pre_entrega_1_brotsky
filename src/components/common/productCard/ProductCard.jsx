@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ProductCard = ({id, title, description, price, img, stock, isItemDetail, quantity, deleteById, isProductInCart}) => {
   return (
     <>
-    { isProductInCart &&  <Card sx={({height:450, maxWidth:250,margin:3, backgroundColor:"#FAEFDD"})} key={id}>
+    { isProductInCart &&  <Card sx={({height:450, width:250,margin:3, backgroundColor:"#FAEFDD"})} key={id}>
       <CardMedia sx={{ width:"100%", height:"100%",minWidth:200, maxHeight:150, objectFit:"cover"}} component="img" alt={title} height="300" image={img} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -28,7 +28,7 @@ const ProductCard = ({id, title, description, price, img, stock, isItemDetail, q
       }     
 
 {isItemDetail&&
-    <Card sx={{mineight:600, width:700,margin:3, backgroundColor:"#FAEFDD"}} key={id}>
+    <Card sx={{height:600, width:700,margin:3, backgroundColor:"#FAEFDD"}} key={id}>
       <CardMedia sx={{ width:"100%", height:"100%", maxHeight:350, objectFit:"cover"}} component="img" alt={title} height="300" image={img} />
       <CardContent >
         <Typography gutterBottom variant="h5" component="div" >

@@ -6,7 +6,7 @@ export default function ItemList({ items,error }) {
     <Grid container sx={{marginBottom:7}}>
     
         {items.map(({id, title,price,description,img}) => (
-       <Grid  item key={id} xs={2} >
+       <Grid  item key={id} xs={4} md={3} lg={2} >
            <ProductCard
             price={price}
             title={title}

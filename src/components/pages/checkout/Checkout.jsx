@@ -1,13 +1,13 @@
-import { Button, TextField, Grid } from "@mui/material";
+import { Button, TextField, Grid  } from "@mui/material";
 import { useContext, useState } from "react";
 import { CartContext } from "../../../context/CartContex";
 import { db } from "../../../firebaseConfig.js";
 import { collection, addDoc, doc,updateDoc } from "firebase/firestore";
-
+import { Link } from "react-router-dom";
 
 export const Checkout = () => {
   
-  const {cart, getTotalPrice}=useContext(CartContext)
+  const {cart, getTotalPrice, clearCart}=useContext(CartContext)
   const [orderId, setOrderId]= useState(null);
   const [info, setInfo] = useState({
     name: "",
@@ -32,23 +32,19 @@ export const Checkout = () => {
    addDoc(orderCollection, order).then(res=>{
     console.log(res)
     setOrderId(res.id);
-    cart.forEach((product) => {
-      let refDoc = doc(db, "products", product.id);
-      updateDoc(refDoc, { stock: product.stock - product.quantity });
-    });
-    clearCart();
   }).catch(e=>console.log("no se pudo cargar la orden, error:" ,e))
-  
- 
-
-  
+  cart.forEach((product) => {
+    let refDoc = doc(db, "products", product.id);
+    updateDoc(refDoc, { stock: product.stock - product.quantity });
+  });
+  clearCart();
 };
-  };
-
   return (
-    <Grid container  sx={{display:'flex', justifyContent:"center"}}>
-     { orderId? <h3>Su orden se cargó con éxito. Su identificador de orden es {orderId}</h3>: 
-     <form onSubmit={handleSubmit}>
+    <Grid container  sx={{display:"flex", justifyContent:"center"}}>
+     { orderId? (<div><h3>Su orden se cargó con éxito. Su identificador de orden es {orderId}</h3>
+      <Link to={`/`}>  <Button size="small"> Seguir comprando </Button>
+      </Link></div>): 
+    ( <form onSubmit={handleSubmit}>
       <Grid item rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 3 }} xs={12} 
         sx={{display:'flex', flexDirection:"column", backgroundColor: "#FAEFDD", marginTop: 5}}>
         <TextField
@@ -80,7 +76,7 @@ export const Checkout = () => {
         variant="contained" 
         color="success" type="submit">enviar</Button>
         </Grid>
-    </form>}
+    </form>)}
     </Grid>
   );
 };
