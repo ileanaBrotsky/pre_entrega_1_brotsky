@@ -3,8 +3,8 @@ import ProductCard from "../../common/productCard/ProductCard.jsx";
 import { Grid } from "@mui/material";
 const ItemDetail = ({item,isItemDetail, onAdd, initial}) => {
   return (
-    <Grid container sx={{padding: "80px",  minHeight:"100vh"}}>
-    <Grid item xs={12} sx={{display: "flex", justifyContent: "center",flexWrap: "wrap", gap: "20px" }}>
+    <Grid container spacing={2}>
+    <Grid item  xs={3} sx={{margin:"auto"}}>
     <ProductCard
       price={item.price}
       title={item.title}

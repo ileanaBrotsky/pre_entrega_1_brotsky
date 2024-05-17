@@ -1,15 +1,7 @@
 export const products = [
+   
     {
-        id: 1,
-        title: 'Barra-pelota',
-        price: 123,
-        stock: 10,
-        description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
-        category: "juguetes-caninos",
-        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542526/images_eqjkcq.jpg'
-    },
-    {
-        id: 2,
+       
         title: 'Mordillo',
         price: 123,
         stock: 10,
@@ -18,7 +10,7 @@ export const products = [
         img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542488/images_jybt1g.jpg'
     },
     {
-        id: 3,
+       
         title: 'Oso mimoso',
         price: 123,
         stock: 10,
@@ -27,7 +19,7 @@ export const products = [
         img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542509/images_q7w3wg.jpg'
     },
     {
-        id: 4,
+        
         title: 'Pelota con puntas',
         price: 123,
         stock: 10,
@@ -36,7 +28,7 @@ export const products = [
         img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542470/images_hqvwyu.jpg'
     },
     {
-        id: 5,
+      
         title: 'Peluches boca',
         price: 123,
         stock: 10,
@@ -45,7 +37,7 @@ export const products = [
         img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542447/images_ndlung.jpg'
     },
     {
-        id: 6,
+        
         title: 'Ardilla peluche',
         price: 123,
         stock: 10,
@@ -54,7 +46,7 @@ export const products = [
         img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542422/images_ig5r5l.jpg'
     },
     {
-        id: 7,
+       
         title: 'Mordillo con soga',
         price: 123,
         stock: 10,
@@ -63,7 +55,7 @@ export const products = [
         img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542405/images_wpigc6.jpg',
     },
     {
-        id: 8,
+       
         title: 'Kong',
         price: 123,
         stock: 10,
@@ -71,17 +63,9 @@ export const products = [
         category: "juguetes-caninos",
         img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711542382/images_gu8ebe.jpg',
     },
+    
     {
-        id: 9,
-        title: 'Resorte',
-        price: 123,
-        stock: 10,
-        description: "Lorem ipsum. Fugiat ad voluptate nulla odit dolor porro tenetur, non cumque debitis, blanditiis provident repudiandae velit pariatur rerum?",
-        category: "juguetes-felinos",
-        img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711548345/71oB5XjInEL._AC_UF1000_1000_QL80__hs5vrg.jpg',
-    },
-    {
-        id: 10,
+        
         title: 'Pelota móvil',
         price: 123,
         stock: 10,
@@ -90,7 +74,7 @@ export const products = [
         img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711548344/61jYFC7hrFL._AC_UF1000_1000_QL80__qwr6aa.jpg',
     },
     {
-        id: 11,
+       
         title: 'entretenedor',
         price: 123,
         stock: 10,
@@ -99,7 +83,7 @@ export const products = [
         img: 'https://res.cloudinary.com/dijrvho1p/image/upload/v1711548344/51K8USMQvvL._AC__aiivli.jpg',
     },
     {
-        id: 12,
+        
         title: 'Rompecabezas',
         price: 123,
         stock: 10,

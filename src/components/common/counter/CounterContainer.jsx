@@ -4,19 +4,19 @@ import CounterPresentational from "./CounterPresentational";
 
 export const CounterContainer = ( {stock, initial=1, onAdd } ) => {
   
-    const [contador, setContador] = useState(initial);
+    const [counter, setcounter] = useState(initial);
 
   const sumar = () => {
-    if( contador < stock ){
-      setContador(contador + 1);
+    if( counter < stock ){
+      setcounter(counter + 1);
     }else{
       alert("maximo en stock")//CAMBIAR ALERT POR ALGO MAS LINDO
     }
   };
 
   const restar = () => {
-    if (contador > 1) {
-      setContador(contador - 1);
+    if (counter > 1) {
+      setcounter(counter - 1);
     } else {
       alert("no podes menos de 1");
     }
@@ -27,7 +27,7 @@ export const CounterContainer = ( {stock, initial=1, onAdd } ) => {
   let objectProps = {
     restar,
     sumar,
-    contador,
+    counter,
     onAdd
  
   };
